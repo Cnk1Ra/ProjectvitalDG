@@ -219,6 +219,45 @@ p {
   height: 16px;
 }
 
+/* Payment Methods */
+.payment-methods {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.payment-icon {
+  height: 28px;
+  width: auto;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.payment-icon:hover {
+  opacity: 1;
+}
+
+.payment-methods--light .payment-icon {
+  opacity: 0.8;
+}
+
+.payment-methods--light .payment-icon:hover {
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .payment-methods {
+    gap: var(--space-4);
+  }
+
+  .payment-icon {
+    height: 24px;
+  }
+}
+
 /* ==========================================================================
    VSL Container
    ========================================================================== */
@@ -818,20 +857,6 @@ p {
   justify-content: center;
   gap: var(--space-2);
   flex-wrap: wrap;
-}
-
-.payment-logos {
-  display: flex;
-  justify-content: center;
-  gap: var(--space-4);
-  margin-top: var(--space-8);
-  opacity: 0.6;
-}
-
-.payment-logos img,
-.payment-logos svg {
-  height: 24px;
-  width: auto;
 }
 
 /* ==========================================================================
