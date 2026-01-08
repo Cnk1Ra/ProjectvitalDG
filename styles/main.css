@@ -265,60 +265,31 @@ p {
 .vsl-container {
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto var(--space-8);
   padding: 0 var(--container-padding);
 }
 
 .vsl-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  overflow: hidden;
   border-radius: var(--radius-lg);
+  overflow: hidden;
   background: #000;
-  box-shadow: var(--shadow-large);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.vsl-wrapper vturb-smartplayer {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-lg);
 }
 
 .vsl-wrapper iframe,
-.vsl-wrapper video,
-.vsl-wrapper > div {
-  position: absolute;
-  top: 0;
-  left: 0;
+.vsl-wrapper video {
   width: 100%;
   height: 100%;
   border: none;
-}
-
-.vsl-placeholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
-  color: var(--text-light);
-  cursor: pointer;
-  transition: var(--transition-base);
-}
-
-.vsl-placeholder:hover .play-button {
-  transform: scale(1.1);
-}
-
-.play-button {
-  transition: var(--transition-base);
-}
-
-.vsl-placeholder p {
-  margin-top: var(--space-4);
-  font-size: var(--text-sm);
-  color: rgba(255, 255, 255, 0.6);
+  border-radius: var(--radius-lg);
 }
 
 /* ==========================================================================
