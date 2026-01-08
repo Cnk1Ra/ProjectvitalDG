@@ -40,6 +40,31 @@
   <link rel="dns-prefetch" href="https://scripts.converteai.net">
   <link rel="dns-prefetch" href="https://images.converteai.net">
   <link rel="dns-prefetch" href="https://api.vturb.com.br">
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID'); // Replace YOUR_PIXEL_ID with your actual Meta Pixel ID
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent', {
+      content_name: '21-Day Mental Reset',
+      content_category: 'Landing Page',
+      value: 47.00,
+      currency: 'EUR'
+    });
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -63,8 +88,17 @@
         </p>
       </div>
 
+      <!-- Watch Video Link -->
+      <a href="#vsl-video" class="hero__video-link" data-i18n="hero.video">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/>
+        </svg>
+        Watch the free presentation
+      </a>
+
       <!-- VSL Video Container -->
-      <div class="vsl-container">
+      <div class="vsl-container" id="vsl-video">
         <div class="vsl-wrapper">
           <vturb-smartplayer id="vid-69601dbbd57dbf783269e41e" style="display: block; margin: 0 auto; width: 100%;"></vturb-smartplayer>
           <script type="text/javascript">
@@ -473,12 +507,24 @@
       </div>
 
       <div class="pricing-box">
+        <div class="urgency-badge" data-i18n="pricing.urgency">
+          <svg class="urgency-badge__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Launch Price — Limited Time
+        </div>
         <div class="pricing-box__original" data-i18n="pricing.value">Total Value: €147</div>
         <div class="pricing-box__current" data-i18n="pricing.today">Today: €47</div>
+        <div class="pricing-box__savings" data-i18n="pricing.savings">You save €100 (68% off)</div>
         <div class="pricing-box__label" data-i18n="pricing.label">One-time payment · Lifetime access</div>
         <a href="https://buy.stripe.com/fZueVc1Xs2Ub31deiU3AY00" class="cta-button" target="_blank" rel="noopener" data-i18n="pricing.cta">
           Get Instant Access
         </a>
+        <div class="pricing-box__spots" data-i18n="pricing.spots">
+          <span class="spots-dot"></span>
+          47 people joined this week
+        </div>
       </div>
     </div>
   </section>
@@ -486,28 +532,75 @@
   <!-- ========================================================================
        SECTION 6: ABOUT THE CREATOR
        ======================================================================== -->
-  <section class="section section--lg">
+  <section class="section section--lg" id="about">
     <div class="container">
       <div class="section-header">
         <h2 data-i18n="about.title">About the method</h2>
       </div>
 
-      <div class="about-content">
-        <p data-i18n="about.p1">
-          My name is Oskar Lind. I work with human behavior and have spent years observing how small daily decisions affect energy, focus, and mental wear.
-        </p>
-        <p data-i18n="about.p2">
-          What I share in this method isn't theory or motivation — it comes from something I needed to apply myself when I realized my daily life was functioning, but costing me more energy than it should.
-        </p>
-        <p data-i18n="about.p3">
-          Everything looked right on the outside. But inside, I was constantly tired, mentally loaded, and feeling like I was falling behind in my own life.
-        </p>
-        <p data-i18n="about.p4">
-          This method is what helped me move from that state to something more functional. Not a new life — but a life with less friction.
-        </p>
-        <p class="about-signature" data-i18n="about.signature">
-          — Oskar Lind
-        </p>
+      <div class="about-grid">
+        <div class="about-photo">
+          <div class="about-photo__wrapper">
+            <img src="images/oskar-lind.jpg" alt="Oskar Lind" class="about-photo__img">
+            <div class="about-credential">
+              <svg class="about-credential__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+              <div class="about-credential__text">
+                <span class="about-credential__school">Lund University</span>
+                <span class="about-credential__degree">M.Sc. Behavioral Psychology</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p data-i18n="about.p1">
+            I hold a Master's degree in Behavioral Psychology from Lund University, where I specialized in decision-making processes and cognitive load management. For the past 8 years, I've worked with individuals and organizations across Scandinavia, helping them understand why we often know what to do — but can't make ourselves start.
+          </p>
+          <p data-i18n="about.p2">
+            This method isn't theory. It emerged from my own experience of functioning on the outside while feeling constantly depleted on the inside. Everything in this program has been tested — first on myself, then refined through hundreds of one-on-one sessions.
+          </p>
+          <p data-i18n="about.p3">
+            My goal isn't to transform your life overnight. It's to reduce the daily friction that keeps you stuck, one small adjustment at a time.
+          </p>
+          <p class="about-signature" data-i18n="about.signature">
+            — Oskar
+          </p>
+
+          <div class="about-tags">
+            <div class="about-tag">
+              <svg class="about-tag__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+              <span data-i18n="about.tag1">Lund University</span>
+            </div>
+            <div class="about-tag">
+              <svg class="about-tag__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+              <span data-i18n="about.tag2">8+ Years Experience</span>
+            </div>
+            <div class="about-tag">
+              <svg class="about-tag__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/>
+              </svg>
+              <span data-i18n="about.tag3">Behavioral Psychology</span>
+            </div>
+            <div class="about-tag">
+              <svg class="about-tag__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span data-i18n="about.tag4">Stockholm, Sweden</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

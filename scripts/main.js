@@ -189,24 +189,22 @@
   }
 
   // ==========================================================================
-  // Video Placeholder Click Handler
+  // Meta Pixel Tracking
   // ==========================================================================
 
-  function initVideoPlaceholder() {
-    const placeholder = document.getElementById('vsl-placeholder');
-    if (!placeholder) return;
-
-    placeholder.addEventListener('click', () => {
-      // This is where Vturb player would be initialized
-      // For now, just show a message or redirect to video
-      console.log('Video placeholder clicked - Vturb player would load here');
-
-      // Example: You could load the Vturb player dynamically here
-      // const script = document.createElement('script');
-      // script.src = 'https://scripts.converteai.net/YOUR_ID/players/YOUR_VIDEO_ID/player.js';
-      // script.async = true;
-      // placeholder.parentNode.appendChild(script);
-      // placeholder.remove();
+  function initMetaPixelTracking() {
+    // Track CTA button clicks as InitiateCheckout
+    document.querySelectorAll('.cta-button').forEach(button => {
+      button.addEventListener('click', () => {
+        if (typeof fbq !== 'undefined') {
+          fbq('track', 'InitiateCheckout', {
+            content_name: '21-Day Mental Reset',
+            content_category: 'Digital Product',
+            value: 47.00,
+            currency: 'EUR'
+          });
+        }
+      });
     });
   }
 
@@ -219,7 +217,7 @@
     initFAQ();
     initSmoothScroll();
     initScrollAnimations();
-    initVideoPlaceholder();
+    initMetaPixelTracking();
   }
 
   // Run on DOM ready
