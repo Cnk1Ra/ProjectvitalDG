@@ -5,35 +5,48 @@
 
 :root {
   /* ==========================================================================
-     Colors - Scandinavian Palette
+     Colors - Scandinavian Palette (Mental Clarity Theme)
      ========================================================================== */
 
+  /* Primary - Azul Petróleo */
+  --primary: #3D5A6C;
+  --primary-dark: #2C4251;
+
+  /* Accent - Dourado Suave */
+  --accent: #B8956B;
+  --accent-light: #D4B896;
+
   /* Backgrounds */
-  --bg-primary: #FAFAFA;
-  --bg-secondary: #FFFFFF;
-  --bg-dark: #0A0A0A;
+  --bg-primary: #FAFAF9;
+  --bg-secondary: #F5F5F4;
+  --bg-card: #FFFFFF;
+  --bg-dark: #1A1A1A;
 
   /* Text */
   --text-primary: #1A1A1A;
-  --text-secondary: #6B6B6B;
-  --text-muted: #9CA3AF;
+  --text-secondary: #666666;
+  --text-muted: #888888;
   --text-light: #FFFFFF;
 
-  /* Accent - Blue (trustworthy) */
-  --accent-blue: #2563EB;
-  --accent-teal: #0D9488;
+  /* States */
+  --color-success: #4A7C6F;
+  --color-error: #C45C5C;
+
+  /* Legacy aliases (for compatibility) */
+  --accent-blue: var(--primary);
+  --accent-teal: var(--color-success);
   --accent-slate: #475569;
 
   /* CTA */
-  --cta-primary: #0A0A0A;
-  --cta-hover: #262626;
+  --cta-primary: var(--primary);
+  --cta-hover: var(--primary-dark);
   --cta-text: #FFFFFF;
 
   /* Utilities */
-  --border-light: #E5E7EB;
+  --border-light: #E5E5E5;
   --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
-  --shadow-large: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  --shadow-large: 0 25px 50px -12px rgba(0, 0, 0, 0.12);
 
   /* ==========================================================================
      Typography
