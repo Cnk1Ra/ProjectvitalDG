@@ -727,16 +727,94 @@ p {
    About / Credibility Section
    ========================================================================== */
 
-.credibility-content {
+.credibility-content,
+.reframe-content,
+.about-content {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
 }
 
-.credibility-content p {
+.credibility-content p,
+.reframe-content p,
+.about-content p {
   font-size: var(--text-lg);
   line-height: var(--leading-relaxed);
   margin: 0 auto var(--space-6);
+}
+
+.about-signature {
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: var(--space-8);
+}
+
+/* Expectations Section */
+.expectations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .expectations-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.expectations-column {
+  background: var(--bg-primary);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+}
+
+.expectations-column__title {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
+  border-bottom: 2px solid var(--border-light);
+}
+
+.expectations-column__title--positive {
+  color: #059669;
+}
+
+.expectations-column__title--negative {
+  color: #DC2626;
+}
+
+.expectations-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.expectations-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+}
+
+.expectations-list svg {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.expectations-list--positive svg {
+  color: #059669;
+}
+
+.expectations-list--negative svg {
+  color: #DC2626;
 }
 
 .trust-badges {
