@@ -814,6 +814,13 @@ p {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
+.about-photo__placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
 .about-credential {
   position: absolute;
   bottom: -16px;
