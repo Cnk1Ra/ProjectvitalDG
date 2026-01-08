@@ -1026,38 +1026,95 @@ p {
 }
 
 /* ==========================================================================
-   Trustpilot Badge
+   Trustpilot Badge - Official Style
    ========================================================================== */
 
 .trustpilot-badge {
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
   gap: var(--space-4);
-  padding: var(--space-4) var(--space-6);
+  padding: var(--space-6);
   background: var(--bg-secondary);
   border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   margin-bottom: var(--space-8);
 }
 
-.trustpilot-logo svg {
-  display: block;
+.trustpilot-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
 }
 
-.trustpilot-info {
+.trustpilot-star-logo {
+  width: 28px;
+  height: 28px;
+}
+
+.trustpilot-text {
+  font-family: var(--font-body);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.trustpilot-rating {
   display: flex;
   flex-direction: column;
-  gap: var(--space-1);
+  align-items: center;
+  gap: var(--space-2);
 }
 
-.trustpilot-stars {
+.trustpilot-stars-boxes {
+  display: flex;
+  gap: 3px;
+}
+
+.tp-star-box {
+  width: 28px;
+  height: 28px;
+  background: #00B67A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.tp-star-box svg {
+  width: 100%;
+  height: 100%;
+}
+
+.trustpilot-score {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.trustpilot-score strong {
+  color: var(--text-primary);
+}
+
+/* Trustpilot Mini Stars for Testimonials */
+.tp-stars-mini {
   display: flex;
   gap: 2px;
 }
 
-.trustpilot-score {
-  font-size: var(--text-xs);
-  color: var(--text-muted);
+.tp-star-mini {
+  width: 20px;
+  height: 20px;
+  background: #00B67A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+
+.tp-star-mini svg {
+  width: 100%;
+  height: 100%;
 }
 
 /* ==========================================================================
