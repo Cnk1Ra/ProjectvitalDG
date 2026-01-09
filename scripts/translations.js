@@ -139,6 +139,10 @@ const translations = {
     "faq.5.a": "Most people notice small shifts within the first week. More significant changes typically appear around days 14-21. Results vary based on individual circumstances and consistency. We don't promise overnight transformation.",
     "faq.6.q": "Is this for depression or anxiety?",
     "faq.6.a": "This method is designed for general mental fatigue and procrastination, not clinical conditions. If you're dealing with depression, anxiety, or other mental health issues, please consult a professional. This is a complement to proper care, not a replacement.",
+    "faq.7.q": "What payment methods do you accept?",
+    "faq.7.a": "We accept all major credit and debit cards (Visa, Mastercard, American Express), as well as Apple Pay and Google Pay. All payments are processed securely through Stripe, and your card details are never stored on our servers.",
+    "faq.8.q": "How does the 30-day guarantee work?",
+    "faq.8.a": "If you're not completely satisfied within 30 days of purchase, simply email us at support@vitlreset.com and we'll process a full refund — no questions asked, no forms to fill out. We believe in our method, but we also understand it's not for everyone.",
 
     // Final CTA
     "cta.title": "Ready to reduce the friction?",
@@ -305,6 +309,10 @@ const translations = {
     "faq.5.a": "De flesta märker små förändringar inom första veckan. Mer betydande förändringar uppträder vanligtvis runt dag 14-21. Resultat varierar baserat på individuella omständigheter och konsekvens. Vi lovar inte transformation över natten.",
     "faq.6.q": "Är detta för depression eller ångest?",
     "faq.6.a": "Denna metod är designad för allmän mental utmattning och uppskjutande, inte kliniska tillstånd. Om du har depression, ångest eller andra psykiska problem, vänligen konsultera en professionell. Detta är ett komplement till rätt vård, inte en ersättning.",
+    "faq.7.q": "Vilka betalningsmetoder accepterar ni?",
+    "faq.7.a": "Vi accepterar alla större kredit- och betalkort (Visa, Mastercard, American Express), samt Apple Pay och Google Pay. Alla betalningar behandlas säkert via Stripe, och dina kortuppgifter lagras aldrig på våra servrar.",
+    "faq.8.q": "Hur fungerar 30-dagarsgarantin?",
+    "faq.8.a": "Om du inte är helt nöjd inom 30 dagar efter köpet, skicka bara ett mail till support@vitlreset.com så behandlar vi en full återbetalning — inga frågor, inga formulär att fylla i. Vi tror på vår metod, men vi förstår också att den inte passar alla.",
 
     // Final CTA
     "cta.title": "Redo att minska friktionen?",
