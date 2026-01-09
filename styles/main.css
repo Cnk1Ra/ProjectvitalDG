@@ -1872,4 +1872,82 @@ p {
   .footer__newsletter-btn {
     width: 100%;
   }
+
+  /* Social Proof Mini - Mobile */
+  .social-proof-mini {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .social-proof-mini__avatars {
+    margin-right: 0;
+  }
+
+  .social-proof-mini__text {
+    text-align: center;
+    font-size: var(--text-xs);
+  }
+
+  /* Guarantee Badge - Mobile */
+  .guarantee-badge {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-3);
+  }
+
+  .guarantee-badge__content {
+    align-items: center;
+  }
+
+  /* Security Badges - Mobile */
+  .security-badges {
+    gap: var(--space-4);
+  }
+
+  .security-badge {
+    font-size: var(--text-xs);
+  }
+
+  .security-badge svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Testimonial Avatar - Mobile */
+  .testimonial-card__avatar {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  /* CTA Button - Mobile */
+  .cta-button {
+    max-width: 100%;
+    padding: 16px 24px;
+    font-size: var(--text-base);
+  }
+
+  /* Pricing Box - Mobile */
+  .pricing-box {
+    padding: var(--space-6);
+  }
+
+  .pricing-box__current {
+    font-size: var(--text-3xl);
+  }
+
+  /* Hero - Mobile */
+  .hero__headline {
+    font-size: var(--text-2xl);
+  }
+
+  .hero__subheadline {
+    font-size: var(--text-base);
+  }
+
+  /* FAQ - Mobile */
+  .faq-question {
+    padding: var(--space-4) 0;
+    font-size: var(--text-sm);
+  }
 }
