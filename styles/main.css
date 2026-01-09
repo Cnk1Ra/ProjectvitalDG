@@ -1634,3 +1634,242 @@ p {
     font-size: var(--text-4xl);
   }
 }
+
+/* ==========================================================================
+   Social Proof Mini (Hero)
+   ========================================================================== */
+
+.social-proof-mini {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.social-proof-mini__avatars {
+  display: flex;
+  margin-right: var(--space-1);
+}
+
+.social-proof-mini__avatars .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: -8px;
+  border: 2px solid var(--bg-primary);
+}
+
+.social-proof-mini__avatars .avatar:first-child {
+  margin-left: 0;
+}
+
+.social-proof-mini__avatars .avatar:nth-child(2) {
+  background: var(--color-success);
+}
+
+.social-proof-mini__avatars .avatar:nth-child(3) {
+  background: var(--accent);
+}
+
+.social-proof-mini__avatars .avatar:nth-child(4) {
+  background: var(--text-muted);
+  font-size: 10px;
+}
+
+.social-proof-mini__text {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   Testimonial Avatars
+   ========================================================================== */
+
+.testimonial-card__avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  flex-shrink: 0;
+}
+
+.testimonial-card__avatar--female {
+  background: linear-gradient(135deg, #E8B4B8 0%, #D4A5A5 100%);
+}
+
+.testimonial-card__avatar--male {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+/* ==========================================================================
+   Guarantee Badge
+   ========================================================================== */
+
+.guarantee-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+  padding: var(--space-4);
+  background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);
+  border: 1px solid var(--color-success);
+  border-radius: var(--radius-md);
+}
+
+.guarantee-badge__icon {
+  width: 32px;
+  height: 32px;
+  color: var(--color-success);
+  flex-shrink: 0;
+}
+
+.guarantee-badge__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.guarantee-badge__title {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.guarantee-badge__text {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   Security Badges
+   ========================================================================== */
+
+.security-badges {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.security-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.security-badge svg {
+  width: 18px;
+  height: 18px;
+  opacity: 0.7;
+}
+
+/* ==========================================================================
+   Footer Newsletter & Contact
+   ========================================================================== */
+
+.footer__newsletter {
+  max-width: 400px;
+  margin: 0 auto var(--space-8);
+  text-align: center;
+}
+
+.footer__newsletter-title {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.footer__newsletter-text {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.footer__newsletter-form {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.footer__newsletter-input {
+  flex: 1;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  background: var(--bg-card);
+}
+
+.footer__newsletter-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.footer__newsletter-btn {
+  padding: var(--space-3) var(--space-5);
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.footer__newsletter-btn:hover {
+  background: var(--primary-dark);
+}
+
+.footer__contact {
+  text-align: center;
+  margin-bottom: var(--space-6);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.footer__contact-email {
+  color: var(--primary);
+  margin-left: var(--space-2);
+}
+
+.footer__contact-email:hover {
+  text-decoration: underline;
+}
+
+.footer__divider {
+  height: 1px;
+  background: var(--border-light);
+  margin: 0 auto var(--space-6);
+  max-width: 200px;
+}
+
+@media (max-width: 480px) {
+  .footer__newsletter-form {
+    flex-direction: column;
+  }
+
+  .footer__newsletter-btn {
+    width: 100%;
+  }
+}

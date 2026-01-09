@@ -150,7 +150,23 @@ const translations = {
     "footer.copyright": "© 2026 Mental Reset · All rights reserved",
     "footer.privacy": "Privacy Policy",
     "footer.terms": "Terms of Service",
-    "footer.gdpr": "GDPR Compliant"
+    "footer.gdpr": "GDPR Compliant",
+    "footer.newsletter.title": "Get mental clarity tips",
+    "footer.newsletter.text": "Weekly insights on reducing mental friction. No spam, unsubscribe anytime.",
+    "footer.newsletter.btn": "Subscribe",
+    "footer.contact.label": "Questions?",
+
+    // Social Proof
+    "hero.social": "Join 1,200+ Scandinavians who've reduced their mental friction",
+
+    // Guarantee
+    "pricing.guarantee.title": "30-Day Money-Back Guarantee",
+    "pricing.guarantee.text": "Not satisfied? Full refund, no questions asked.",
+
+    // Security
+    "security.checkout": "Secure Checkout",
+    "security.ssl": "SSL Encrypted",
+    "security.gdpr": "GDPR Compliant"
   },
 
   sv: {
@@ -300,7 +316,23 @@ const translations = {
     "footer.copyright": "© 2026 Mental Reset · Alla rättigheter förbehållna",
     "footer.privacy": "Integritetspolicy",
     "footer.terms": "Användarvillkor",
-    "footer.gdpr": "GDPR-kompatibel"
+    "footer.gdpr": "GDPR-kompatibel",
+    "footer.newsletter.title": "Få tips för mental klarhet",
+    "footer.newsletter.text": "Veckovis insikter om att minska mental friktion. Ingen spam, avsluta när du vill.",
+    "footer.newsletter.btn": "Prenumerera",
+    "footer.contact.label": "Frågor?",
+
+    // Social Proof
+    "hero.social": "Gå med 1 200+ skandinaver som minskat sin mentala friktion",
+
+    // Guarantee
+    "pricing.guarantee.title": "30 dagars pengarna-tillbaka-garanti",
+    "pricing.guarantee.text": "Inte nöjd? Full återbetalning, inga frågor.",
+
+    // Security
+    "security.checkout": "Säker betalning",
+    "security.ssl": "SSL-krypterad",
+    "security.gdpr": "GDPR-kompatibel"
   }
 };
 

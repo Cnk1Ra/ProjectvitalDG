@@ -124,6 +124,17 @@
         <span data-i18n="hero.trust">Secure checkout · 30-day guarantee</span>
       </div>
 
+      <!-- Social Proof -->
+      <div class="social-proof-mini">
+        <div class="social-proof-mini__avatars">
+          <div class="avatar">E</div>
+          <div class="avatar">M</div>
+          <div class="avatar">S</div>
+          <div class="avatar">+</div>
+        </div>
+        <span class="social-proof-mini__text" data-i18n="hero.social">Join 1,200+ Scandinavians who've reduced their mental friction</span>
+      </div>
+
       <!-- Payment Methods -->
       <div class="payment-methods">
         <!-- Mastercard -->
@@ -525,6 +536,43 @@
           <span class="spots-dot"></span>
           47 people joined this week
         </div>
+
+        <!-- Guarantee Badge -->
+        <div class="guarantee-badge">
+          <svg class="guarantee-badge__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          <div class="guarantee-badge__content">
+            <span class="guarantee-badge__title" data-i18n="pricing.guarantee.title">30-Day Money-Back Guarantee</span>
+            <span class="guarantee-badge__text" data-i18n="pricing.guarantee.text">Not satisfied? Full refund, no questions asked.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Security Badges -->
+      <div class="security-badges">
+        <div class="security-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+          <span data-i18n="security.checkout">Secure Checkout</span>
+        </div>
+        <div class="security-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <span data-i18n="security.ssl">SSL Encrypted</span>
+        </div>
+        <div class="security-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <span data-i18n="security.gdpr">GDPR Compliant</span>
+        </div>
       </div>
     </div>
   </section>
@@ -790,6 +838,7 @@
             "I was skeptical — I've tried productivity systems before. But this was different. It's not about doing more, it's about removing what's blocking you. After two weeks, I noticed I was actually starting tasks instead of just planning them."
           </p>
           <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar testimonial-card__avatar--female">E</div>
             <div class="testimonial-card__author-info">
               <div class="testimonial-card__name" data-i18n="testimonial.1.name">Emma S.</div>
               <div class="testimonial-card__location">
@@ -812,6 +861,7 @@
             "The daily adjustments are so small they almost feel insignificant. But they compound. By day 15, my mornings were completely different. Less resistance, more flow."
           </p>
           <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar testimonial-card__avatar--male">M</div>
             <div class="testimonial-card__author-info">
               <div class="testimonial-card__name" data-i18n="testimonial.2.name">Marcus L.</div>
               <div class="testimonial-card__location">
@@ -834,6 +884,7 @@
             "As someone who overthinks everything, the decision framework alone was worth it. I use it daily now. Less time deliberating, more time doing."
           </p>
           <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar testimonial-card__avatar--female">S</div>
             <div class="testimonial-card__author-info">
               <div class="testimonial-card__name" data-i18n="testimonial.3.name">Sofia A.</div>
               <div class="testimonial-card__location">
@@ -1020,6 +1071,24 @@
        ======================================================================== -->
   <footer class="footer">
     <div class="container">
+      <!-- Newsletter Signup -->
+      <div class="footer__newsletter">
+        <h4 class="footer__newsletter-title" data-i18n="footer.newsletter.title">Get mental clarity tips</h4>
+        <p class="footer__newsletter-text" data-i18n="footer.newsletter.text">Weekly insights on reducing mental friction. No spam, unsubscribe anytime.</p>
+        <form class="footer__newsletter-form" action="#" method="POST">
+          <input type="email" placeholder="your@email.com" class="footer__newsletter-input" required>
+          <button type="submit" class="footer__newsletter-btn" data-i18n="footer.newsletter.btn">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer__contact">
+        <span data-i18n="footer.contact.label">Questions?</span>
+        <a href="mailto:support@vitlreset.com" class="footer__contact-email">support@vitlreset.com</a>
+      </div>
+
+      <div class="footer__divider"></div>
+
       <p class="footer__copyright" data-i18n="footer.copyright">
         © 2026 Mental Reset · All rights reserved
       </p>
